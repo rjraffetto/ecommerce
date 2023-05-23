@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Garage Sale E-commerce</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Garage Sale E-commerce</h1>
+      <div id="filters">
+        <label for="category-filter">Categoría:</label>
+        <select id="category-filter">
+          <option value="all">Todos</option>
+          <option value="electronics">Electrónicos</option>
+          <option value="clothing">Ropa</option>
+          <option value="furniture">Muebles</option>
+        </select>
+        <label for="price-filter">Precio máximo:</label>
+        <input type="number" id="price-filter" min="0" step="0.01">
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <section id="products"></section>
+      <div id="total-price"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
